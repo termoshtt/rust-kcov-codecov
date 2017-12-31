@@ -8,4 +8,4 @@ for t in target/debug/*[^\.d]; do
   kcov --exclude-pattern=/.cargo,/usr/lib --verify "$cov_out" "$t"
 done
 
-bash <(curl -s https://codecov.io/bash) && echo "Uploaded code coverage"
+bash <(curl -s https://codecov.io/bash) -t ${CODECOV_TOKEN}
