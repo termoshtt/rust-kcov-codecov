@@ -1,0 +1,8 @@
+name: rust-kcov-codecov
+version: 0.1.0
+description: Calc kcov of Rust project
+keywords:
+  - Rust
+  - kcov
+  - codecov
+properties: {}
